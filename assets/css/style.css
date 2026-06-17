@@ -457,3 +457,29 @@ h3 {
     width: 96px;
   }
 }
+
+/* Profile: 外部リンク一覧 */
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.link-list a {
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* ヘッダー内ナビ */
+.site-nav {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.site-nav a {
+  font-weight: 600;
+  text-decoration: none;
+}
