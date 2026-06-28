@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>鈴木ラファエル麦 | Personal Website</title>
+  <title>鈴木ラファエル麦 | 研究・プロジェクト・プロフィール</title>
   <meta
     id="meta-description"
     name="description"
-    content="鈴木ラファエル麦の個人サイトです。略歴、研究成果、プロジェクト、読んだ本、現在の興味関心をまとめています。"
+    content="鈴木ラファエル麦（Rafael Mugi Suzuki）の公式サイト。東北大学での研究、日本神経科学大会での学会発表、海外研究留学、プロジェクト、プロフィールを紹介します。"
   >
 
-  <meta property="og:title" content="鈴木ラファエル麦 | Personal Website">
-  <meta property="og:description" content="鈴木ラファエル麦の略歴、研究成果、プロジェクト、読書記録、現在の興味関心をまとめた個人サイトです。">
+  <meta property="og:title" content="鈴木ラファエル麦 | 研究・プロジェクト・プロフィール">
+  <meta property="og:description" content="鈴木ラファエル麦の研究、学会発表、海外研究留学、プロジェクト、プロフィール。">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="鈴木ラファエル麦">
+  <meta property="og:url" content="https://bioinfo-rafael.github.io/RafaelMugiSuzuki/">
 
   <!-- 後で自分のGitHub Pages URLに差し替える -->
   <link rel="canonical" href="https://bioinfo-rafael.github.io/RafaelMugiSuzuki/">
@@ -28,6 +29,7 @@
     "@type": "ProfilePage",
     "mainEntity": {
       "@type": "Person",
+      "@id": "https://bioinfo-rafael.github.io/RafaelMugiSuzuki/#person",
       "name": "Rafael Mugi Suzuki",
       "alternateName": [
         "鈴木ラファエル麦",
@@ -37,6 +39,18 @@
       ],
       "url": "https://bioinfo-rafael.github.io/RafaelMugiSuzuki/",
       "mainEntityOfPage": "https://bioinfo-rafael.github.io/RafaelMugiSuzuki/profile/",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Tohoku University",
+        "sameAs": "https://www.tohoku.ac.jp/"
+      },
+      "knowsAbout": [
+        "Bioinformatics",
+        "Computational Biology",
+        "Systems Biology",
+        "Neuroscience",
+        "Machine Learning"
+      ],
       "sameAs": [
         "https://researchmap.jp/rafael_mugi_suzuki",
         "https://orcid.org/0009-0000-1251-7144",
@@ -56,11 +70,15 @@
     </a>
 
     <nav class="site-nav" aria-label="Primary">
+      <a href="research/" data-lang="ja">研究</a>
+      <a href="research/" data-lang="en" hidden>Research</a>
+      <a href="projects/" data-lang="ja">活動</a>
+      <a href="projects/" data-lang="en" hidden>Projects</a>
       <a href="profile/" data-lang="ja">プロフィール</a>
       <a href="profile/" data-lang="en" hidden>Profile</a>
     </nav>
 
-    <div class="language-switch" aria-label="Language switcher">
+    <div class="language-switch" role="group" aria-label="Language switcher">
       <button type="button" class="lang-button is-active" data-set-lang="ja" aria-pressed="true">
         JA
       </button>
@@ -76,11 +94,11 @@
       <p class="eyebrow">Personal Website</p>
       <h1>鈴木ラファエル麦</h1>
       <p class="lead">
-        研究、プロジェクト、読書記録、現在の興味関心をまとめる個人サイトです。
-        これまでの活動を整理しながら、考えていることや取り組んでいるテーマを少しずつ公開していきます。
+        バイオインフォマティクス、システム生物学、神経科学を中心とした研究と、
+        海外研究留学、プロジェクト、これまでの活動をまとめています。
       </p>
       <div class="hero-actions">
-        <a class="primary-link" href="books/">読んだ本を見る</a>
+        <a class="primary-link" href="research/">研究実績を見る</a>
         <a class="secondary-link" href="profile/">プロフィールを見る</a>
       </div>
     </section>
@@ -90,11 +108,11 @@
       <p class="eyebrow">Personal Website</p>
       <h1>Rafael Mugi Suzuki</h1>
       <p class="lead">
-        This is a personal website for organizing my research, projects, reading notes,
-        and current interests. I will gradually publish my past work, ideas, and topics I am exploring.
+        Research in bioinformatics, systems biology, and neuroscience, together with
+        international research experience, projects, and other activities.
       </p>
       <div class="hero-actions">
-        <a class="primary-link" href="books/">View Books</a>
+        <a class="primary-link" href="research/">View Research</a>
         <a class="secondary-link" href="profile/">View Profile</a>
       </div>
     </section>
@@ -112,7 +130,7 @@
           現在の所属、専門分野、これまで取り組んできた研究やプロジェクト、関心を持っているテーマなどを簡潔にまとめます。
         </p>
         <p>
-          研究・出版物・外部プロフィールへのリンクは、<a href="profile/">プロフィールページ</a>にまとめています。
+          日本神経科学大会での発表や海外研究留学は<a href="research/">研究ページ</a>、起業プログラムや外部掲載実績は<a href="projects/">プロジェクトページ</a>にまとめています。
         </p>
       </div>
     </section>
@@ -126,12 +144,12 @@
 
       <div class="text-block">
         <p>
-          This section will contain a short biography, including my current affiliation,
-          areas of expertise, previous research, projects, and current interests.
+          This is the personal website of Rafael Mugi Suzuki (鈴木ラファエル麦), covering
+          research, international research experience, projects, and current interests.
         </p>
         <p>
-          The text here can be refined later based on the content from LinkedIn and Google Sites.
-          The first goal is simply to communicate who I am, what I care about, and what I have worked on.
+          Conference presentations and research experience are documented on the <a href="research/">research page</a>,
+          while entrepreneurship programs and external coverage are collected on the <a href="projects/">projects page</a>.
         </p>
       </div>
     </section>
@@ -184,7 +202,7 @@
           <span class="card-number">02</span>
           <h3>過去の研究成果など</h3>
           <p>
-            論文、発表、研究メモ、関連する成果などを整理する予定です。
+            学会発表、海外研究留学、本人執筆の報告書を公開資料とともに紹介します。
           </p>
         </a>
 
@@ -192,7 +210,7 @@
           <span class="card-number">03</span>
           <h3>過去のプロジェクトなど</h3>
           <p>
-            これまでに参加・実施したプロジェクトをまとめる予定です。
+            起業プログラム、ビジネスコンテスト、執筆・レビュー活動をまとめています。
           </p>
         </a>
 
@@ -226,7 +244,7 @@
           <span class="card-number">02</span>
           <h3>Research Outputs</h3>
           <p>
-            A place for papers, presentations, research notes, and related outputs.
+            Conference presentations, international research experience, and publicly available reports.
           </p>
         </a>
 
@@ -234,7 +252,7 @@
           <span class="card-number">03</span>
           <h3>Projects</h3>
           <p>
-            A summary of past and ongoing projects.
+            Entrepreneurship programs, business competitions, and writing activities.
           </p>
         </a>
 
