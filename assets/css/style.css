@@ -479,6 +479,10 @@ h3 {
   max-width: 940px;
 }
 
+.record-list + .book-note {
+  margin-top: 24px;
+}
+
 .record-item {
   padding: 28px;
   background: rgba(255, 255, 255, 0.78);
