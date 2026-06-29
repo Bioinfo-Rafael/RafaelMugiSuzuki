@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bioinfo-rafael.github.io/RafaelMugiSuzuki/sitemap.xml
+Sitemap: https://bioinfo-rafael.github.io/RafaelMugiSuzuki/sitemap.txt
