@@ -464,6 +464,27 @@ h3 {
   font-size: 0.9rem;
 }
 
+.content-card.book-cat-priority {
+  grid-column: 1 / -1;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(219, 234, 254, 0.8));
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.book-cat-priority .cat-thumb {
+  flex-basis: 82px;
+  width: 82px;
+  height: 112px;
+}
+
+.category-label {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 /* 各書籍の縦並びリスト */
 .book-list {
   display: grid;
@@ -552,6 +573,16 @@ h3 {
 
   .content-card {
     min-height: 210px;
+  }
+
+  .content-card.book-cat-priority {
+    padding: 20px 24px;
+  }
+
+  .book-cat-priority .cat-thumb {
+    flex-basis: 64px;
+    width: 64px;
+    height: 88px;
   }
 
   .books-feature-card {
