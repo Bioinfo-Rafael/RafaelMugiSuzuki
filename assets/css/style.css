@@ -434,6 +434,32 @@ h3 {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
+.book-index-head {
+  padding: 16px 0 0;
+}
+
+.book-index-head h1 {
+  margin: 0;
+}
+
+.book-index-grid {
+  padding: 28px 0 48px;
+}
+
+.book-index-grid .card-grid {
+  gap: 14px;
+}
+
+.book-index-grid .content-card.book-cat {
+  min-height: 112px;
+  padding: 14px 18px;
+}
+
+.book-index-grid .content-card.book-cat-priority {
+  min-height: 142px;
+  padding: 18px 24px;
+}
+
 /* カテゴリ一覧のカードにサムネを添える */
 .content-card.book-cat {
   position: relative;
@@ -614,6 +640,14 @@ h3 {
 
   .section {
     padding: 52px 0;
+  }
+
+  .book-index-head {
+    padding-top: 12px;
+  }
+
+  .book-index-grid {
+    padding: 22px 0 40px;
   }
 
   .accent-section {
