@@ -355,11 +355,6 @@ h3 {
   margin-top: 24px;
 }
 
-.books-feature-top {
-  padding-top: 48px;
-  border-top: 0;
-}
-
 .page-end-links {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -367,6 +362,10 @@ h3 {
 
 .page-end-links .subtle-links {
   margin: 0;
+}
+
+.hero .books-feature-card {
+  margin-top: 40px;
 }
 
 .site-footer {
