@@ -564,6 +564,16 @@ h3 {
   font-weight: 600;
 }
 
+.sitemap-link-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 760px;
+}
+
+.sitemap-link-list a {
+  color: var(--accent-dark);
+  text-underline-offset: 3px;
+}
+
 /* Research / Projects: 実績と出典 */
 .record-list {
   display: grid;
@@ -678,6 +688,10 @@ h3 {
   }
 
   .related-links {
+    grid-template-columns: 1fr;
+  }
+
+  .sitemap-link-list {
     grid-template-columns: 1fr;
   }
 }
