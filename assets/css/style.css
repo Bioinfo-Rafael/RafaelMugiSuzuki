@@ -440,6 +440,7 @@ h3 {
 
 .book-index-head h1 {
   margin: 0;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
 }
 
 .book-index-grid {
