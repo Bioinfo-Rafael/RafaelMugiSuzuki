@@ -148,6 +148,26 @@ h1 {
   letter-spacing: -0.08em;
 }
 
+.hero-name {
+  max-width: none;
+  margin-bottom: 0;
+  font-size: clamp(2rem, 8vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+}
+
+.hero-name .nowrap {
+  white-space: nowrap;
+}
+
+.hero-subname {
+  margin: 0.4rem 0 28px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 h2 {
   margin: 0;
   font-size: clamp(1.8rem, 4vw, 3rem);
