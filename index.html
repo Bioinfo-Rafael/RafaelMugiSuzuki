@@ -77,8 +77,6 @@
     <nav class="site-nav" aria-label="Primary">
       <a class="nav-books" href="books/" data-lang="ja">読んだ本</a>
       <a class="nav-books" href="books/" data-lang="en" hidden>Books</a>
-      <a href="profile/" data-lang="ja">プロフィール</a>
-      <a href="profile/" data-lang="en" hidden>Profile</a>
     </nav>
 
     <div class="language-switch" role="group" aria-label="Language switcher">
@@ -92,6 +90,38 @@
   </header>
 
   <main>
+    <!-- Books: 日本語 -->
+    <section class="section books-feature books-feature-top" data-lang="ja">
+      <div class="section-heading">
+        <p class="section-kicker">Books</p>
+        <h2>読んだ本</h2>
+      </div>
+
+      <a class="books-feature-card" href="books/">
+        <span>
+          <strong>これまでに読んだ本の記録</strong>
+          <small>分野ごとの本と、感想・メモをまとめています。</small>
+        </span>
+        <span class="books-feature-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <!-- Books: English -->
+    <section class="section books-feature books-feature-top" data-lang="en" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">Books</p>
+        <h2>Books I Have Read</h2>
+      </div>
+
+      <a class="books-feature-card" href="books/">
+        <span>
+          <strong>Explore my reading archive</strong>
+          <small>Books organized by subject, with reflections and notes.</small>
+        </span>
+        <span class="books-feature-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
     <!-- Hero: 日本語 -->
     <section class="hero" data-lang="ja">
       <p class="eyebrow">Personal Website</p>
@@ -100,12 +130,6 @@
         This is vibe-coded sry!
         これまでに読んだ本を、分野ごとの感想やメモとともにまとめています。
         研究、海外留学、プロジェクトなどの経歴も掲載しています。
-      </p>
-      <div class="hero-actions">
-        <a class="primary-link books-primary-link" href="books/">読んだ本を見る <span aria-hidden="true">→</span></a>
-      </div>
-      <p class="subtle-links">
-        そのほか、<a href="research/">研究実績</a>、<a href="projects/">これまでの活動</a>、<a href="interests/">今の興味関心</a>、<a href="profile/">プロフィール</a>も掲載しています。
       </p>
     </section>
 
@@ -116,13 +140,6 @@
       <p class="lead">
         A reading archive organized by subject, with notes and reflections.
         Research, international experience, and past projects are also available.
-      </p>
-      <div class="hero-actions">
-        <a class="primary-link books-primary-link" href="books/">Browse Books I Have Read <span aria-hidden="true">→</span></a>
-      </div>
-      <p class="subtle-links">
-        You can also find my <a href="research/">research</a>, <a href="projects/">past projects</a>,
-        <a href="interests/">current interests</a>, and <a href="profile/">profile</a>.
       </p>
     </section>
 
@@ -189,43 +206,16 @@
       </p>
     </section>
 
-    <!-- Books: 日本語 -->
-    <section class="section books-feature" data-lang="ja">
-      <div class="section-heading">
-        <p class="section-kicker">Books</p>
-        <h2>読んだ本</h2>
-      </div>
-
-      <a class="books-feature-card" href="books/">
-        <span>
-          <strong>これまでに読んだ本の記録</strong>
-          <small>分野ごとの本と、感想・メモをまとめています。</small>
-        </span>
-        <span class="books-feature-arrow" aria-hidden="true">→</span>
-      </a>
-
-      <p class="subtle-links section-links">
-        これまでの経歴については、<a href="research/">研究成果</a>、<a href="projects/">プロジェクト</a>、<a href="interests/">興味関心</a>の各ページをご覧ください。
+    <section class="section page-end-links" data-lang="ja">
+      <p class="subtle-links">
+        そのほか、<a href="research/">研究実績</a>、<a href="projects/">これまでの活動</a>、<a href="interests/">今の興味関心</a>、<a href="profile/">プロフィール</a>も掲載しています。
       </p>
     </section>
 
-    <!-- Books: English -->
-    <section class="section books-feature" data-lang="en" hidden>
-      <div class="section-heading">
-        <p class="section-kicker">Books</p>
-        <h2>Books I Have Read</h2>
-      </div>
-
-      <a class="books-feature-card" href="books/">
-        <span>
-          <strong>Explore my reading archive</strong>
-          <small>Books organized by subject, with reflections and notes.</small>
-        </span>
-        <span class="books-feature-arrow" aria-hidden="true">→</span>
-      </a>
-
-      <p class="subtle-links section-links">
-        For more of my background, see <a href="research/">research</a>, <a href="projects/">projects</a>, and <a href="interests/">current interests</a>.
+    <section class="section page-end-links" data-lang="en" hidden>
+      <p class="subtle-links">
+        You can also find my <a href="research/">research</a>, <a href="projects/">past projects</a>,
+        <a href="interests/">current interests</a>, and <a href="profile/">profile</a>.
       </p>
     </section>
   </main>
