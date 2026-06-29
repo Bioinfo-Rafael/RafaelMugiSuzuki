@@ -75,10 +75,8 @@
     </a>
 
     <nav class="site-nav" aria-label="Primary">
-      <a href="research/" data-lang="ja">研究</a>
-      <a href="research/" data-lang="en" hidden>Research</a>
-      <a href="projects/" data-lang="ja">活動</a>
-      <a href="projects/" data-lang="en" hidden>Projects</a>
+      <a class="nav-books" href="books/" data-lang="ja">読んだ本</a>
+      <a class="nav-books" href="books/" data-lang="en" hidden>Books</a>
       <a href="profile/" data-lang="ja">プロフィール</a>
       <a href="profile/" data-lang="en" hidden>Profile</a>
     </nav>
@@ -100,13 +98,15 @@
       <h1>鈴木ラファエル麦</h1>
       <p class="lead">
         This is vibe-coded sry!
-        バイオインフォマティクス、システム生物学、神経科学を中心とした研究、
-        査読論文、海外研究留学、受賞歴、プロジェクトをまとめています。
+        これまでに読んだ本を、分野ごとの感想やメモとともにまとめています。
+        研究、海外留学、プロジェクトなどの経歴も掲載しています。
       </p>
       <div class="hero-actions">
-        <a class="primary-link" href="research/">研究実績を見る</a>
-        <a class="secondary-link" href="profile/">プロフィールを見る</a>
+        <a class="primary-link books-primary-link" href="books/">読んだ本を見る <span aria-hidden="true">→</span></a>
       </div>
+      <p class="subtle-links">
+        そのほか、<a href="research/">研究実績</a>、<a href="projects/">これまでの活動</a>、<a href="interests/">今の興味関心</a>、<a href="profile/">プロフィール</a>も掲載しています。
+      </p>
     </section>
 
     <!-- Hero: English -->
@@ -114,13 +114,16 @@
       <p class="eyebrow">Personal Website</p>
       <h1>Rafael Mugi Suzuki</h1>
       <p class="lead">
-        Research in bioinformatics, systems biology, and neuroscience, together with
-        a peer-reviewed publication, international research experience, awards, and projects.
+        A reading archive organized by subject, with notes and reflections.
+        Research, international experience, and past projects are also available.
       </p>
       <div class="hero-actions">
-        <a class="primary-link" href="research/">View Research</a>
-        <a class="secondary-link" href="profile/">View Profile</a>
+        <a class="primary-link books-primary-link" href="books/">Browse Books I Have Read <span aria-hidden="true">→</span></a>
       </div>
+      <p class="subtle-links">
+        You can also find my <a href="research/">research</a>, <a href="projects/">past projects</a>,
+        <a href="interests/">current interests</a>, and <a href="profile/">profile</a>.
+      </p>
     </section>
 
     <!-- Profile: 日本語 -->
@@ -186,89 +189,44 @@
       </p>
     </section>
 
-    <!-- Contents: 日本語 -->
-    <section class="section" data-lang="ja">
+    <!-- Books: 日本語 -->
+    <section class="section books-feature" data-lang="ja">
       <div class="section-heading">
-        <p class="section-kicker">Contents</p>
-        <h2>ページ一覧</h2>
+        <p class="section-kicker">Books</p>
+        <h2>読んだ本</h2>
       </div>
 
-      <div class="card-grid">
-        <a class="content-card" href="books/">
-          <span class="card-number">01</span>
-          <h3>過去に読んだ本</h3>
-          <p>
-            読んだ本の紹介、感想、関心とのつながりをまとめます。
-            まず最初に作るページです。
-          </p>
-        </a>
+      <a class="books-feature-card" href="books/">
+        <span>
+          <strong>これまでに読んだ本の記録</strong>
+          <small>分野ごとの本と、感想・メモをまとめています。</small>
+        </span>
+        <span class="books-feature-arrow" aria-hidden="true">→</span>
+      </a>
 
-        <a class="content-card" href="research/">
-          <span class="card-number">02</span>
-          <h3>過去の研究成果など</h3>
-          <p>
-            査読論文、学会発表、海外研究留学、本人執筆の報告書を公開資料とともに紹介します。
-          </p>
-        </a>
-
-        <a class="content-card" href="projects/">
-          <span class="card-number">03</span>
-          <h3>過去のプロジェクトなど</h3>
-          <p>
-            受賞歴、起業プログラム、ビジネスコンテスト、執筆・レビュー活動をまとめています。
-          </p>
-        </a>
-
-        <a class="content-card" href="interests/">
-          <span class="card-number">04</span>
-          <h3>今の興味関心</h3>
-          <p>
-            現在調べていること、考えているテーマ、今後深掘りしたい領域をまとめます。
-          </p>
-        </a>
-      </div>
+      <p class="subtle-links section-links">
+        これまでの経歴については、<a href="research/">研究成果</a>、<a href="projects/">プロジェクト</a>、<a href="interests/">興味関心</a>の各ページをご覧ください。
+      </p>
     </section>
 
-    <!-- Contents: English -->
-    <section class="section" data-lang="en" hidden>
+    <!-- Books: English -->
+    <section class="section books-feature" data-lang="en" hidden>
       <div class="section-heading">
-        <p class="section-kicker">Contents</p>
-        <h2>Pages</h2>
+        <p class="section-kicker">Books</p>
+        <h2>Books I Have Read</h2>
       </div>
 
-      <div class="card-grid">
-        <a class="content-card" href="books/">
-          <span class="card-number">01</span>
-          <h3>Books I Have Read</h3>
-          <p>
-            Notes and reflections on books I have read. This will be the first page to build.
-          </p>
-        </a>
+      <a class="books-feature-card" href="books/">
+        <span>
+          <strong>Explore my reading archive</strong>
+          <small>Books organized by subject, with reflections and notes.</small>
+        </span>
+        <span class="books-feature-arrow" aria-hidden="true">→</span>
+      </a>
 
-        <a class="content-card" href="research/">
-          <span class="card-number">02</span>
-          <h3>Research Outputs</h3>
-          <p>
-            Conference presentations, international research experience, and publicly available reports.
-          </p>
-        </a>
-
-        <a class="content-card" href="projects/">
-          <span class="card-number">03</span>
-          <h3>Projects</h3>
-          <p>
-            Entrepreneurship programs, business competitions, and writing activities.
-          </p>
-        </a>
-
-        <a class="content-card" href="interests/">
-          <span class="card-number">04</span>
-          <h3>Current Interests</h3>
-          <p>
-            Topics, questions, and fields I am currently exploring.
-          </p>
-        </a>
-      </div>
+      <p class="subtle-links section-links">
+        For more of my background, see <a href="research/">research</a>, <a href="projects/">projects</a>, and <a href="interests/">current interests</a>.
+      </p>
     </section>
   </main>
 
