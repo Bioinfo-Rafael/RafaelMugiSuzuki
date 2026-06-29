@@ -443,14 +443,46 @@ h3 {
   padding: 20px 24px;
 }
 
+.book-cat .cat-thumbs {
+  display: flex;
+  flex: 0 0 124px;
+  align-items: center;
+  padding-left: 6px;
+}
+
 .book-cat .cat-thumb {
-  flex: 0 0 64px;
-  width: 64px;
-  height: 88px;
+  flex: 0 0 58px;
+  width: 58px;
+  height: 80px;
+  margin-left: -25px;
   object-fit: cover;
   border-radius: 8px;
   background: var(--bg-soft);
   box-shadow: 0 6px 18px rgba(31, 41, 51, 0.12);
+  transform: rotate(-3deg);
+  transition: transform 180ms ease;
+}
+
+.book-cat .cat-thumb:first-child {
+  margin-left: 0;
+}
+
+.book-cat .cat-thumb:nth-child(2) {
+  z-index: 1;
+  transform: translateY(-3px);
+}
+
+.book-cat .cat-thumb:nth-child(3) {
+  z-index: 2;
+  transform: rotate(3deg);
+}
+
+.book-cat:hover .cat-thumb:first-child {
+  transform: translateX(-3px) rotate(-5deg);
+}
+
+.book-cat:hover .cat-thumb:nth-child(3) {
+  transform: translateX(3px) rotate(5deg);
 }
 
 .book-cat .cat-body {
@@ -471,10 +503,15 @@ h3 {
   border-color: rgba(37, 99, 235, 0.35);
 }
 
+.book-cat-priority .cat-thumbs {
+  flex-basis: 168px;
+}
+
 .book-cat-priority .cat-thumb {
-  flex-basis: 82px;
-  width: 82px;
-  height: 112px;
+  flex-basis: 76px;
+  width: 76px;
+  height: 104px;
+  margin-left: -31px;
 }
 
 .category-label {
@@ -579,10 +616,15 @@ h3 {
     padding: 20px 24px;
   }
 
+  .book-cat-priority .cat-thumbs {
+    flex-basis: 124px;
+  }
+
   .book-cat-priority .cat-thumb {
-    flex-basis: 64px;
-    width: 64px;
-    height: 88px;
+    flex-basis: 58px;
+    width: 58px;
+    height: 80px;
+    margin-left: -25px;
   }
 
   .books-feature-card {
