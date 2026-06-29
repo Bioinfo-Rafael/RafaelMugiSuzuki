@@ -436,16 +436,19 @@ h3 {
 
 /* カテゴリ一覧のカードにサムネを添える */
 .content-card.book-cat {
+  position: relative;
+  overflow: hidden;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  min-height: 0;
+  min-height: 128px;
   padding: 20px 24px;
 }
 
 .book-cat .cat-thumbs {
   display: flex;
-  flex: 0 0 124px;
+  flex: 1 1 auto;
+  min-width: 0;
   align-items: center;
   padding-left: 6px;
 }
@@ -460,20 +463,18 @@ h3 {
   background: var(--bg-soft);
   box-shadow: 0 6px 18px rgba(31, 41, 51, 0.12);
   transform: rotate(-3deg);
-  transition: transform 180ms ease;
+  transition: margin-left 180ms ease, transform 180ms ease;
 }
 
 .book-cat .cat-thumb:first-child {
   margin-left: 0;
 }
 
-.book-cat .cat-thumb:nth-child(2) {
-  z-index: 1;
+.book-cat .cat-thumb:nth-child(3n + 2) {
   transform: translateY(-3px);
 }
 
-.book-cat .cat-thumb:nth-child(3) {
-  z-index: 2;
+.book-cat .cat-thumb:nth-child(3n) {
   transform: rotate(3deg);
 }
 
@@ -485,10 +486,25 @@ h3 {
   transform: translateX(3px) rotate(5deg);
 }
 
+.book-cat:hover .cat-thumb:not(:first-child) {
+  margin-left: -20px;
+}
+
 .book-cat .cat-body {
+  position: relative;
+  z-index: 20;
   display: flex;
+  flex: 0 1 auto;
   flex-direction: column;
   gap: 4px;
+  min-width: 128px;
+  padding: 12px 14px;
+  color: #111827;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.96);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(31, 41, 51, 0.14);
+  backdrop-filter: blur(5px);
 }
 
 .book-cat .cat-count {
@@ -498,13 +514,14 @@ h3 {
 
 .content-card.book-cat-priority {
   grid-column: 1 / -1;
+  min-height: 160px;
   padding: 28px 32px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(219, 234, 254, 0.8));
   border-color: rgba(37, 99, 235, 0.35);
 }
 
 .book-cat-priority .cat-thumbs {
-  flex-basis: 168px;
+  flex-basis: 620px;
 }
 
 .book-cat-priority .cat-thumb {
