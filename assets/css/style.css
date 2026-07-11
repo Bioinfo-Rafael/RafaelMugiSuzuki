@@ -606,6 +606,22 @@ h3 {
   margin-bottom: 0;
 }
 
+.book-body pre {
+  overflow-x: auto;
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.book-body code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
 .book-date {
   display: inline-block;
   margin-top: 4px;
