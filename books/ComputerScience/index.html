@@ -78,6 +78,17 @@
             <span class="book-date">2026/7に読了</span>
           </div>
         </article>
+
+        <article class="book-item">
+          <img class="book-cover" src="../../assets/images/books/computerscience/computerscience_05_236665803d.jpeg" alt="作って学ぶAIエージェント" loading="lazy">
+          <div class="book-body">
+            <h3>作って学ぶAIエージェント</h3>
+            <p>AI Agentは、LLMにプロンプトとともにJSON Schemaの形でtoolsを渡し、その返り値として実行する処理を指定できるようにしたもの（function calling / tool calling）。実行結果をメッセージ履歴に追加して再びLLM APIに返し、tool callingか文章のみを返すかをLLMが判断するループを繰り返す。MCPも、外部サーバーへの処理を依頼するtoolsを含めるための手段に過ぎない。</p>
+            <p>実装ではCLIをエントリーポイントとし、プロバイダごとのSDKやrequest・返り値の形式の違いをwrapperで吸収する。tool callingや思考ループの処理と分離することで、プロバイダの切り替え・追加・変更を対応するファイルの変更だけで済ませられる。TypeScriptの型定義によって形式の違いを明確にできる点も重要だ。</p>
+            <p>AI Agentのセキュリティは、ほぼコマンド実行toolの安全性に尽きる。commandをparseして登録済みのものか確認し、root_dirの編集禁止や外部接続の遮断など、実行できる内容・環境を制限する必要がある。今後は、何をコンテキストに含めるかを管理するコンテキストエンジニアリングが重要になり、マルチエージェント、RAG、探索エージェントなどへの発展が考えられる。</p>
+            <span class="book-date">2026/7に読了</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>
